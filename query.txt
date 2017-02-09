@@ -4,9 +4,10 @@ public class GetThing : IScalar<Thing>
     {
         Id = id;
 
-        q => q.AsQueryable<Thing>()
+        q => q.AsQueryable<Thing>(Tracked)
             .Where(t => t.Id == Id);
     }
 
-    public Guid Id { get; set; }
+    public Guid Id      { get; private set; }
+    public bool Tracked { get; set; }
 }

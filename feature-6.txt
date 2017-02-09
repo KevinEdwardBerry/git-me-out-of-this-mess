@@ -1,0 +1,3 @@
+var other = GetOther();
+
+other.Thing = GetThing(other.Id) { Tracked = true };
