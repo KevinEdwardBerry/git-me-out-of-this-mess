@@ -1,0 +1,2 @@
+var thing = GetThing(id);
+repo.Commit();
