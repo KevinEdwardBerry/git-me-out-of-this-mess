@@ -1,0 +1,12 @@
+public class GetThing : IScalar<Thing>
+{
+    public GetThing(Guid id)
+    {
+        Id = id;
+
+        q => q.AsQueryable<Thing>()
+            .Where(t => t.Id == Id);
+    }
+
+    public Guid Id { get; set; }
+}
