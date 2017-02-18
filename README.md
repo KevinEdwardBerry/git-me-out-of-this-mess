@@ -3,6 +3,8 @@ Playground for "gitting" out of trouble with git.
 ### Resources for learning more:
 [All things git](https://git-scm.com/)
 
+[All things git documentation](https://git-scm.com/docs)
+
 [Best Practices](https://sethrobertson.github.io/GitBestPractices/)
 
 [More on fixing things](https://sethrobertson.github.io/GitFixUm/fixup.html)
