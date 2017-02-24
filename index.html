@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Find the bug</title>
+</head>
+<body>
+    <div>
+        Hello, World!!!
+    </div>
+    <div>
+        <span id="display">1</span>
+        <button type="button" id="more">More</button>
+    </div>
+</body>
+<script>
+    (function () {
+        var displaySpan = document.getElementById('display');
+        var moreButton  = document.getElementById('more');
+
+        moreButton.onclick = function () {
+            var next = parseInt(displaySpan.innerHTML) + 1;
+            displaySpan.innerHTML = next;
+        };
+    })();
+</script>
+</html>
