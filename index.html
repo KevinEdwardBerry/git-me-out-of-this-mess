@@ -23,7 +23,13 @@
             var next = parseInt(displaySpan.innerHTML) + 1;
 
             displaySpan.innerHTML = next;
-            changeMe.innerHTML    = 'How high can you go?';
+
+            if (next < 10) {
+                changeMe.innerHTML = 'How high can you go?';
+            }
+            else {
+                changeMe.innerHTML = 'That\'s pretty high';
+            }
         };
 
     })();
