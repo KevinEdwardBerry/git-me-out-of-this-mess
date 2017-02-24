@@ -10,16 +10,23 @@
         <span id="display">1</span>
         <button type="button" id="more">More</button>
     </div>
+    <div id="changeMe">
+        Change me
+    </div>
 </body>
 <script>
     (function () {
         var displaySpan = document.getElementById('display');
         var moreButton  = document.getElementById('more');
+        var changeMe    = document.getElementById('changeMe');
 
         moreButton.onclick = function () {
             var next = parseInt(displaySpan.innerHTML) + 1;
+
             displaySpan.innerHTML = next;
+            changeMe.innerHTML    = 'How high can you go?';
         };
+
     })();
 </script>
 </html>
