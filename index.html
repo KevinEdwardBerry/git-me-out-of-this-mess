@@ -15,14 +15,12 @@
 </body>
 <script>
     (function () {
-        // waiting on a bug
         var displaySpan = document.getElementById('display');
         var moreButton  = document.getElementById('more');
         var changeMe    = document.getElementById('changeMe');
+        var next        = parseInt(displaySpan.innerHTML) + 1;
 
         moreButton.onclick = function () {
-            var next = parseInt(displaySpan.innerHTML) + 1;
-
             displaySpan.innerHTML = next;
 
             if (next < 10) {
