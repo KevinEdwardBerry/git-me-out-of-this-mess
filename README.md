@@ -14,3 +14,5 @@ Playground for "gitting" out of trouble with git.
 [About reverting merge commits](https://www.kernel.org/pub/software/scm/git/docs/howto/revert-a-faulty-merge.txt)
 
 [Oh Sh*t Git](http://ohshitgit.com/)
+
+[Tab autocompletion for macOS bash](http://code-worrier.com/blog/autocomplete-git/)
